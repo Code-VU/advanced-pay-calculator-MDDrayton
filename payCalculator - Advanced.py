@@ -11,7 +11,9 @@ def calculatePay():
             otHrs = hrs - 40
             hrs = 40
             gross = (hrs * rte) +  (otHrs * rte * 1.5)
-        print(gross)
+            str(gross)
+        print("calculating pay ", gross)       
+        #print(gross)
     # end assignment
 
 ## if you want to test locally before you try to sync
