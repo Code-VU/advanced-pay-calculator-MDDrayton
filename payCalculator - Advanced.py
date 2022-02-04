@@ -1,14 +1,16 @@
 def calculatePay():
     # This first line is provided for you
         hrs = input("Enter Hours:")
-        rte = input("Enter Rate: ")
+        rte = input("Enter Rate:")
+        hrs = float(hrs)
+        rte = float(rte)
 
-        if float(hrs) <= 40:
-            gross = float(hrs)*float(rte) 
+        if hrs <= 40:
+            gross = hrs * rte
         else:
-            otHrs = float(hrs) - 40
+            otHrs = hrs - 40
             hrs = 40
-            gross = (float(hrs)*float(rte)) +  (otHrs*float(rte) * 1.5)
+            gross = (hrs * rte) +  (otHrs * rte * 1.5)
         print(gross)
     # end assignment
 
